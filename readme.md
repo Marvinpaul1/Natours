@@ -677,9 +677,9 @@ const app = require('./app');
 
 ## Lessons Learned
 
-**1. Order matters everywhere.** Middleware order in Express, `dotenv` loading order, and hook execution order in Mongoose — one misplacement causes hard-to-trace bugs.
+**1. I learnt Order matters everywhere.** Middleware order in Express, `dotenv` loading order, and hook execution order in Mongoose — one misplacement causes hard-to-trace bugs.
 
-**2. Always check variable names between controller and template.** Pug has no type safety. A mismatch between what you send in `res.render()` and what the template uses produces a 500 with minimal feedback.
+**2. I learnt to always check variable names between controller and template.** Pug has no type safety. A mismatch between what you send in `res.render()` and what the template uses produces a 500 with minimal feedback.
 
 **3. `catchAsync` is your best friend.** Once you internalize the pattern, async error handling becomes trivial. Without it, every `async` controller needs its own try/catch.
 
@@ -696,14 +696,13 @@ const app = require('./app');
 ## Resources
 
 | Resource             | Link                                                                                                           |
-| -------------------- | -------------------------------------------------------------------------------------------------------------- |
+| -------------------- | -------------------------------------------------------------------------------------------------------------- | --- |
 | Course               | [Udemy — Node.js Bootcamp by Jonas Schmedtmann](https://www.udemy.com/course/nodejs-express-mongodb-bootcamp/) |
 | Mongoose Docs        | https://mongoosejs.com/docs/                                                                                   |
 | Express Docs         | https://expressjs.com/en/api.html                                                                              |
 | JWT Debugger         | https://jwt.io                                                                                                 |
 | Pug Docs             | https://pugjs.org/api/getting-started.html                                                                     |
-| Paystack Docs        | https://paystack.com/docs/api/                                                                                 |
-| Stripe Docs          | https://stripe.com/docs/api                                                                                    |
+| Paystack Docs        | https://paystack.com/docs/api/                                                                                 |     |
 | Mailtrap (dev email) | https://mailtrap.io                                                                                            |
 | MongoDB Atlas        | https://www.mongodb.com/atlas                                                                                  |
 
