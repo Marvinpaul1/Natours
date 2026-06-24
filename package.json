@@ -5,11 +5,12 @@
   "license": "ISC",
   "author": "Marvin",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
     "start:prod": "cross-env NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js",
     "watch:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/bundle.js",
-    "build:js": "parcel watch ./public/js/index.js --dist-dir ./public/js/bundle.js"
+    "build:js": "parcel build ./public/js/index.js --dist-dir ./public/js/bundle.js"
   },
   "dependencies": {
     "axios": "^1.17.0",
@@ -53,5 +54,8 @@
     "events": "^3.3.0",
     "nodemon": "^3.1.14",
     "parcel": "^2.16.4"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
   }
 }

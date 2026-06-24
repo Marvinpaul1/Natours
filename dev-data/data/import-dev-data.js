@@ -7,10 +7,15 @@ const Review = require('../../models/reviewModel');
 const User = require('../../models/userModel');
 
 dotenv.config({ path: './config.env' });
-console.log('Database String:', process.env.DATABASE_LOCAL);
+console.log('Database String:', process.env.DATABASE);
 
-mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
-  // (DB).then(() => {
+const DB = process.env.DATABASE.replace(
+  '<PASSWORD>',
+  process.env.DATABASE_PASSWORD,
+);
+
+// mongoose.connect(process.env.DATABASE_LOCAL).then(() => {
+mongoose.connect(DB).then(() => {
   console.log('DB connections successful');
 });
 const port = process.env.PORT || 3000;
