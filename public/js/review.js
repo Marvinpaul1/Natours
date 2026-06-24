@@ -18,6 +18,6 @@ export const createReview = async (tourId, review, rating) => {
       }, 1500);
     }
   } catch (error) {
-    showAlert('error', 'Error login! Try again.');
+    showAlert('error', 'Something went wrong! Try again.');
   }
 };
