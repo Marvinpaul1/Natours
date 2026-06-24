@@ -18,7 +18,7 @@ export const login = async (email, password) => {
       }, 1500);
     }
   } catch (error) {
-    showAlert('error', 'Error login out! Try again.');
+    showAlert('error', 'Error login in! Try again.');
   }
 };
 
